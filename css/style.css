@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* colors */
+/* ### Neutral */
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-menu-list-1,.list-1 ,.list-2{
+    display: flex;margin-left: 10px;
+}
+.list-1 > li, .list-2 > li{
+    margin-left: 20px;
+}
+.content-wrapper{
+    display: flex;
+}
+.make-a-remote-work-wrapper{
+    width: 50%;
+    padding: 5em 8em;
+
+}
+.make-a-remote-work-wrapper h1{
+    font-size: 4.3em;
+    font-weight: 700;
+}
+.make-a-remote-work-wrapper p{
+    font-size: 18px;
+    padding-top: 1em;
+
+}
+
+.image-hero{
+    background: url(../images/image-hero-desktop.png)  no-repeat  ; 
+    background-size: contain;
+    width: 47%;
+}
