@@ -27,22 +27,15 @@ header {
   display: inline-block;
   left: -10em;
 }
-<<<<<<< HEAD
-.content-wrapper{
-    display: flex;
-    justify-content: space-between;
-=======
 .logo-menu-list-1-wrapper {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 1em;
   margin-left: 10em;
->>>>>>> f994b95bdd409951f1c69629841b6fc5738af78a
 }
 .list-1,
 .list-2 {
-  /* position: absolute; */
   display: flex;
   justify-content: space-between;
   gap: 2em;
@@ -59,12 +52,6 @@ header {
   display: block;
 }
 
-<<<<<<< HEAD
-.image-hero{
-    background: url(../images/image-hero-desktop.png)  no-repeat  ; 
-    background-size: contain;
-    width: 50%;
-=======
 #company:hover > ul {
   display: block;
 }
@@ -97,8 +84,7 @@ a {
 .register {
   border: 1px solid var(--AlmostBlack);
   border-radius: 10px;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-right: 1em;
 }
 .register a {
   padding: 0 0.5em;
@@ -112,16 +98,17 @@ a {
   justify-content: space-between;
 }
 .make-a-remote-work-wrapper {
-  width: 65%;
-  margin-top: -1em;
-  margin-left: 10em;
+  width: 90%;
+  margin: auto;
+  margin-top: -15%;
+  padding: 12% 12% 0 12%;
 }
 .make-a-remote-work-wrapper h1 {
   font-size: 4.5rem;
   font-weight: 700;
 }
 .make-a-remote-work-wrapper p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding-top: 2em;
   color: var(--MediumGray);
   line-height: 30px;
@@ -132,33 +119,39 @@ a {
 .lean-more a {
   border: 1px solid var(--AlmostBlack);
   border-radius: 10px;
-  padding: 1em 1.5em;
+  padding: 1em 2em;
+  background-color: var(--AlmostBlack);
+  font-weight: bold;
+  color: white;
 }
 .lean-more a:hover,
 .lean-more a:active {
+  background-color: var(--AlmostWhite);
   color: var(--AlmostBlack);
 }
 
 .client-icon {
-  margin-top: 6em;
+    display: inline-block;
+  margin-top: 5em;
 }
 .client-icon img {
-  padding: 0.5em;
+ width: 5em;
+ margin-left: 1.55em;
 }
 
 .image-hero {
-  background: url(../images/image-hero-desktop.png) top no-repeat;
+    position: relative;
+  background: url(../images/image-hero-desktop.png)  no-repeat;
   background-size: contain;
   width: 100%;
-  height: 37em;
-  position: relative;
-  top: -6em;
+  height: 38em;
+  top: -10em;
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .make-a-remote-work-wrapper {
     width: 65%;
-    /* margin-top: -1em;
-    margin-left: 10em; */
+    margin-top: -1em;
+    margin-left: 10em; 
   }
   .make-a-remote-work-wrapper h1 {
     font-size: 4rem;
@@ -172,8 +165,8 @@ a {
   .client-icon img {
     width: 6em;
   }
-}
-@media (max-width: 922px) {
+} */
+/* @media (max-width: 922px) {
   .make-a-remote-work-wrapper {
     width: 80%;
     margin-top: -2em;
@@ -202,10 +195,10 @@ a {
     padding: 1em;
   }
   .sub-list-1 {
-    /* padding: 2px;  */
+    padding: 2px;  
   }
-}
-@media (max-width: 768px) {
+} */
+/* @media (max-width: 768px) {
   .logo-menu-list-1-wrapper {
     flex-direction: column;
   }
@@ -236,12 +229,12 @@ a {
   }
 
   .hide {
-    /* display: none; */
+    display: none;
   }
   .icon-menu-wrapper {
     display: inline;
   }
-}
+} */
 
 @media (max-width: 600px) {
   .logo-menu-list-1-wrapper {
@@ -283,12 +276,50 @@ a {
   .list-2 {
     top: -15em;
   }
-
+  .sub-list-1 {
+    position: relative;
+  }
+  .sub-list-2 {
+    position: relative;
+  }
   .hide {
-    /* display: none; */
+    display: none;
   }
   .icon-menu-wrapper {
     display: inline;
   }
->>>>>>> f994b95bdd409951f1c69629841b6fc5738af78a
+  .content-wrapper {
+    display: grid;
+  }
+
+  .image-hero {
+    grid-row: 1;
+    background: url(../images/image-hero-mobile.png) 0/100% no-repeat;
+    margin-top: -14em;
+  }
+  .make-a-remote-work-wrapper {
+    grid-row: 2;
+    width: 100%;
+    margin: auto;
+    margin-top: -14em;
+    align-items: center;
+    padding: 5%;
+  }
+  .make-a-remote-work-wrapper h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .make-a-remote-work-wrapper p {
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 25px;
+    margin-top: -1em;
+  }
+  .lean-more {
+    margin-left: 25%;
+  }
+  .client-icon img {
+    width: 20%;
+    margin-left: 2%;
+  }
 }
