@@ -1,20 +1,24 @@
-const featureList = document.getElementById("features");
-const company = document.getElementById("company");
-const subList1 = document.querySelector(".sub-list-1");
+const activeMenuIcon = document.getElementById("open");
+const closeMenuIcon = document.getElementById("close");
+const navigationEl = document.getElementById("navigation");
 const subList2 = document.querySelector(".sub-list-2");
 
 
-const displayFeatures =()=>{
-    featureList.addEventListener("click",()=>{
-        subList1.classList.toggle("toggle-1");
-        subList2.classList.remove("toggle-2");
-    })
+const displayMenu = () => {
+  activeMenuIcon.addEventListener("click", () => {
+    navigationEl.classList.toggle("toggle-active");
+    closeMenuIcon.classList.toggle("toggle-active");
+    activeMenuIcon.classList.toggle("toggle-close");
+  });
 }
-const displayCompany=()=>{
-    company.addEventListener("click",()=>{
-        subList2.classList.toggle("toggle-2")
-        subList1.classList.remove("toggle-1");
-    })
-}
-// displayFeatures();
-// displayCompany();
+const closeMenu = () => {
+    closeMenuIcon.addEventListener("click", () => {
+      navigationEl.classList.toggle("toggle-close");
+      closeMenuIcon.classList.toggle("toggle-close");
+      activeMenuIcon.classList.toggle("toggle-active");
+    });
+  
+};
+
+displayMenu();
+closeMenu();

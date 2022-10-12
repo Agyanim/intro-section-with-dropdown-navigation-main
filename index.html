@@ -33,62 +33,67 @@
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <div class="logo-menu-list-1-wrapper">
-          <img class="logo" src="images/logo.svg" alt="" />
+      <img class="logo" src="images/logo.svg" alt="" />
+      <div class="icon-menu-wrapper">
+        <img id="open" src="images/icon-menu.svg" alt="" />
+        <img id="close" src="images/icon-close-menu.svg" alt="" />
+      </div>
+      <nav class="navigation" id="navigation">
+        <div class="menu-list-1-wrapper hide">
+          <ul class="list-1">
+            <li id="features">
+              Features
+              <img
+                class="arrow-down-features"
+                src="images/icon-arrow-down.svg"
+                alt=""
+              />
 
-          <div class="menu-list-1-wrapper hide">
-            <ul class="list-1">
-              <li id="features">
-                Features <img class="arrow-down-features" src="images/icon-arrow-down.svg" alt="" />
-
-                <ul id="sub-list-1" class="sub-list-1">
-                  <li>
-                    <img src="images/icon-todo.svg" alt="" /><a href="https://www.britannica.com/topic/food"
-                      >Todo List</a
-                    >
-                  </li>
-                  <li>
-                    <img src="images/icon-calendar.svg" alt="" /><a href="#"
-                      >Calendar</a
-                    >
-                  </li>
-                  <li>
-                    <img src="images/icon-reminders.svg" alt="" />
-                    <a href="#"
-                      >reminder</a
-                    >
-                  </li>
-                  <li>
-                    <img src="images/icon-planning.svg" alt="" /><a href="#"
-                      >Planning</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li id="company">
-                Company <img class="arrow-down-company" src="images/icon-arrow-down.svg" alt="">
-                <ul class="sub-list-2">
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">About</a></li>
-            </ul>
-          </div>
-          <div class="icon-menu-wrapper">
-            <img src="images/icon-menu.svg" alt="">
-            <img src="images/icon-close-menu.svg" alt="">
-          </div>
-
+              <ul id="sub-list-1" class="sub-list-1">
+                <li>
+                  <img src="images/icon-todo.svg" alt="" /><a
+                    href="https://www.britannica.com/topic/food"
+                    >Todo List</a
+                  >
+                </li>
+                <li>
+                  <img src="images/icon-calendar.svg" alt="" /><a href="#"
+                    >Calendar</a
+                  >
+                </li>
+                <li>
+                  <img src="images/icon-reminders.svg" alt="" />
+                  <a href="#">reminder</a>
+                </li>
+                <li>
+                  <img src="images/icon-planning.svg" alt="" /><a href="#"
+                    >Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="company">
+              Company
+              <img
+                class="arrow-down-company"
+                src="images/icon-arrow-down.svg"
+                alt=""
+              />
+              <ul class="sub-list-2">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li id="career"><a href="#">Careers</a></li>
+            <li id="about"><a href="#">About</a></li>
+          </ul>
+        </div>
         <div class="menu-list-2-wrapper hide">
           <ul class="list-2">
             <li><a href="#">Login</a></li>
             <li class="register"><a href="#">Register</a></li>
           </ul>
-          </div>
         </div>
       </nav>
     </header>
