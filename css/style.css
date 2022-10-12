@@ -89,6 +89,7 @@ a {
 }
 .icon-menu-wrapper {
   position: absolute;
+  display: none;
 }
 .content-wrapper {
   display: flex;
