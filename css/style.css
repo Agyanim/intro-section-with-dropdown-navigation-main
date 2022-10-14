@@ -26,7 +26,7 @@ header {
   gap: 10em;
   margin-top: 1.5em;
   margin-left: 12em;
-  display: none;
+  /* display: none; */
 }
 .logo {
   position: absolute;
@@ -89,6 +89,14 @@ a {
 }
 .icon-menu-wrapper {
   position: absolute;
+}
+.icon-menu-wrapper img{
+  cursor: pointer;
+}
+.op{
+  display: none;
+}
+.cl{
   display: none;
 }
 .content-wrapper {
@@ -146,12 +154,6 @@ a {
   top: -10em;
 }
 
-.toggle-active {
-  display: block;
-}
-.toggle-close {
-  display: none;
-}
 @media (max-width: 600px) {
   .logo {
     width: 22%;
@@ -163,12 +165,20 @@ a {
     margin-top: 1.5em;
     z-index: 1;
   }
-  #open{
+  .op{
     display: block;
   }
-  #close{
+  .close{
     display: none;
   }
+
+  .cl{
+    display: none;
+  }
+  .open{
+    display: block;
+  }
+
   .icon-menu-wrapper :first-child {
     position: inherit;
     margin-left: -10%;
@@ -183,11 +193,22 @@ a {
     height: 100vh;
     margin-top: -0.01em;
     left: -25%;
+    display: none;
   }
+  .toggle-active {
+    display: block;
+  }
+  .toggle-close {
+    display: none;
+  }
+  
   .list-1,
   .list-2 {
     flex-direction: column;
     gap: 0.5em;
+  }
+  .list-1 > li{
+    margin-bottom: 1em;
   }
   #features ul :last-child {
     margin-bottom: 5em;
@@ -203,7 +224,7 @@ a {
     z-index: 2;
   }
   .list-2 {
-    margin-top: 1em;
+    margin-top: 2em;
     text-align: center;
   }
   .sub-list-1,

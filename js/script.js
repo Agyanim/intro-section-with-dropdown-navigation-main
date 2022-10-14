@@ -6,16 +6,19 @@ const subList2 = document.querySelector(".sub-list-2");
 
 const displayMenu = () => {
   activeMenuIcon.addEventListener("click", () => {
-    navigationEl.classList.toggle("toggle-active");
-    closeMenuIcon.classList.toggle("toggle-active");
-    activeMenuIcon.classList.toggle("toggle-close");
+    navigationEl.classList.add("toggle-active");
+    closeMenuIcon.classList.add("open");
+    activeMenuIcon.classList.add("close");
+
+
   });
 }
 const closeMenu = () => {
     closeMenuIcon.addEventListener("click", () => {
-      navigationEl.classList.toggle("toggle-close");
-      closeMenuIcon.classList.toggle("toggle-close");
-      activeMenuIcon.classList.toggle("toggle-active");
+      navigationEl.classList.remove("toggle-active");
+      closeMenuIcon.classList.remove("open");
+      activeMenuIcon.classList.remove("close");
+
     });
   
 };
